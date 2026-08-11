@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Kishore - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins (Import bold weights for better control) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-content">
+            <!-- Logo with gradient text -->
+            <h1 class="logo">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="gradient-text-logo">Dr. Sai Kishore Jujjuvarapu, Ph.D.</span>
+                </a>
+            </h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                    <li><a href="#research" class="nav-link" data-section="Research">Research Interests</a></li>
+                    <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+                    <li><a href="#gallery" class="nav-link" data-section="publications">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <nav class="mobile-nav-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-section="about">Skills</a></li>
+            <li><a href="#experience" class="mobile-nav-link" data-section="skills">Experience</a></li>
+            <li><a href="#research" class="mobile-nav-link" data-section="Research">Research Interests</a></li>
+            <li><a href="#publications" class="mobile-nav-link" data-section="publications">Publications</a></li>
+            <li><a href="#gallery" class="mobile-nav-link" data-section="publications">Gallery</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Text on Left -->
+                <div class="hero-text">
+                    <h2>Hi, I'm <span class="gradient-text">Sai Kishore Jujjuvarapu</span></h2>
+                    <!-- Dynamic typing effect for roles -->
+                    <div class="hero-roles">
+                        <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Ph.D. researcher in Mechanical and Aerospace Engineering from IIT Hyderabad, specializing in MEMS, FEM, and microsystem design. Proven R&D expertise with a strong track record in advanced simulations, sensor design, and scientific publications.</p>
+                    <div class="hero-buttons">
+                        <a href="Jujjuvarapu_Sai_Kishore_Resume.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Image on Right -->
+                <div class="hero-image">
+                    <img src="Sai_DP.jpeg" alt="Sai Kishore Profile" class="profile-pic">
+                </div>
+            </div>
+            <!-- Scroll to explore -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll">
+                Scroll to explore <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content-grid">
+                    <div class="about-card journey-card">
+                        <p>Mechanical engineer and applied researcher with a Ph.D. in Mechanical and Aerospace Engineering from IIT Hyderabad. Strong expertise in MEMS-based sensor design, experimental mechanics, finite element modeling (FEM), and microsystem engineering. Proven experience in R&D, including the design and development of environmental test setups, vibration testing, microfabrication, and system-level simulation. <br><br>Adopt in using industry-standard tools and programming languages,with a strong track record of scientific publications and collaborative research.</p>
+                        <!--<p>I love working in a team environment and also bring strong leadership capabilities to any project I’m part of. Outside the world of tech, I’m also an athlete, which helps me stay disciplined, focused, and goal-oriented in every aspect of life.</p> -->
+                    </div>
+                    <div class="about-right-column">
+                        <div class="about-card status-card">
+                            <h3 class="card-title blue-text">Current Role</h3>
+                            <div class="status-item">
+                                <i class="fas fa-briefcase status-icon"></i>
+                                <span>Lead Application Scientist, MAKE Microsystems Pvt Ltd., Bengaluru, India</span>
+                            </div>
+                        </div>
+                        <div class="about-card languages-card">
+                            <h3 class="card-title blue-text">Education</h3>
+                            <div class="status-item">
+                                <span>Doctor of Philosophy, <br>Indian Institute of Technology Hyderabad, Department of Mechanical and Aerospace Engineering, Mechanics and Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills Section -->
+        <!--<section id="skills" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                            <h4 class="card-title blue-text">FEM Simulation & CAD:</h4><br>
+                            <span>COMSOL Multiphysics,&nbsp;ANSYS,<br><br>CoventorWare,&nbsp;MEMS+,<br><br>Clewin&nbsp;SolidEdge,<br><br>Solidworks,&nbsp;MATLAB,<br><br>Simulink,&nbsp;Maple</span>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="card-title blue-text">Programming:</h4><br>
+                        <span>Python,&nbsp;C</span>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="card-title blue-text">Instrumentation:</h4><br>
+                        <span>Polytech MSA & LDV,<br><br>Agilent Network Analyzer, &nbsp;M+P<br><br> Analyzer, &nbsp;Direct Laser Writing,<br><br>BIOX 3D Bioprinter, <br><br>Raspberry Pi, &nbsp;Arduino</span>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="card-title blue-text">Software Tools:</h4><br>
+                        <span>Origin,&nbsp; LabVIEW, <br><br>MS Office Suite,&nbsp; Inkscape, <br><br>LATEX</span>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="card-title blue-text">Misc:</h4><br>
+                        <span>Academic research,<br><br> teaching, &nbsp;training, <br><br>consultation, <br><br>LATEX typesetting and publishing</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        \\
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3 class="card-title blue-text">FEM Simulation & CAD:</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>COMSOL Multiphysics</span><span>ANSYS</span><span>CoventorWare</span><span>MEMS+</span><span>Clewin</span><span>SolidEdge</span><span>Solidworks</span><span>MATLAB</span><span>Simulink</span><span>Maple</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3 class="card-title blue-text">Programming Languages:</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Python</span><span>C</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3 class="card-title blue-text">Instrumentation:</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Polytech MSA & LDV,</span><span>Agilent Network Analyzer</span><span>M+P Analyzer</span><span>Direct Laser Writing</span><span>BIOX 3D Bioprinter</span><span>Raspberry Pi</span><span>Arduino</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3 class="card-title blue-text">Software Tools:</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Origin</span><span>LabVIEW</span><span>MS Office Suite</span><span>Inkscape</span><span>LATEX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3 class="card-title blue-text">Research Associate - Microfluidic Cell Culture System BITS Pilani, Hyderabad Campus</h3>
+                        <h3><span class="year">Dec 2024 – Till Date</span></h3>
+                    </div>
+                        <ul>
+                            <li>Developed a portable Bio-Cyber Physical microfluidic cell culture platform.</li>
+                            <li>Integrated environmental control for CO₂, temperature, and humidity using embedded microcontrollers.</li>
+                            <li>Emphasized automation, portability, and real-time monitoring for point-of-care applications.</li>
+                        </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3 class="card-title blue-text">Research Associate – Vibration Testing (Honeywell Project) IIT Hyderabad, SenAct&VD Lab</h3>
+                        <h3><span class="year">Oct – Dec 2024</span></h3>
+                    </div>
+                        <ul>
+                            <li>Conducted vibration analysis of HVT system using M+P analyzer.</li>
+                            <li>Identified modal frequencies and evaluated system reliability under operational loads.</li>
+                        </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-card-header">
+                        <h3 class="card-title blue-text">Doctoral Researcher – MEMS Dynamics and Modelling IIT Hyderabad, SenAct&VD Lab</h3>
+                        <h3><span class="year">2018- 2024</span></h3>
+                    </div>
+                        <h4>Thesis Title: Frequency and Damping analysis of Microcantilever Beams</h4>
+                        <ul>
+                            <li>Studied microcantilever beams with advanced geometries (leaf-shaped, curved, hexagonal).</li>
+                            <li>Developed a MEMS accelerometer with compound lever-based compliant mechanisms.</li>
+                            <li>Employed MEMSPlus, MATLAB/Simulink for system-level simulations; validated experimentally.</li>
+                            <li>Focused on closed-loop architectures for enhanced dynamic performance.</li>
+                        </ul>
+                </div>
+                <div class="exp-card">
+                    <h3 class="card-title blue-text">Teaching Experience</h3>
+                    <div class="exp-card-header">                        
+                        <h4 class="card-title blue-text">Teaching Assistant - IIT Hyderabad</h4>
+                        <h3><span class="year">2018- 2024</span></h3>
+                    </div>
+                        <ul>
+                            <li>Courses: Dynamics and Vibrations, Modeling and Simulation</li>
+                        </ul>
+                    <div class="exp-card-header">                        
+                        <h4 class="card-title blue-text">Teaching Assistant- RGUKT, APIIIT NUZ</h4>
+                        <h3><span class="year">Jan - May 2017</span></h3>
+                    </div>
+                        <ul>
+                            <li>Courses: Solid Mechanics, Technology of Surface Coatings</li>
+                        </ul>
+                </div>
+                
+            </div>
+        </section>
+ <!-- ============ RESEARCH ============ -->
+    <section id="research" class="section alt">
+        <div class="container">
+            <p class="eyebrow">CH.04 — Monitored Parameters</p>
+            <h2 class="section-title">Research Interests</h2>
+            <ul class="research-list" role="list">
+                <li><i class="fas fa-microchip" aria-hidden="true"></i>Microelectromechanical Systems (MEMS)</li>
+                <li><i class="fas fa-wave-square" aria-hidden="true"></i>Dynamic analysis of microcantilever beams</li>
+                <li><i class="fas fa-compass-drafting" aria-hidden="true"></i>Design and modeling of MEMS accelerometers</li>
+                <li><i class="fas fa-droplet" aria-hidden="true"></i>Soft matter physics and microfluidics</li>
+                <li><i class="fas fa-chart-line" aria-hidden="true"></i>Frequency and damping behavior under various dissipation mechanisms</li>
+                <li><i class="fas fa-dna" aria-hidden="true"></i>Bio-cyber physical systems for cell culture platforms</li>
+                <li><i class="fas fa-arrows-spin" aria-hidden="true"></i>Closed-loop system design and performance evaluation</li>
+            </ul>
+        </div>
+    </section>
+        <!-- Research Section -->
+<!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+        <div class="container">
+            <p class="eyebrow">CH.05 — Publication Log</p>
+            <h2 class="section-title">Publications</h2>
+ 
+            <div class="filter-row" id="pub-filters">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All · 11</button>
+                <button type="button" class="filter-btn" data-filter="journal" aria-pressed="false">Journals · 3</button>
+                <button type="button" class="filter-btn" data-filter="conference" aria-pressed="false">Conference · 4</button>
+                <button type="button" class="filter-btn" data-filter="book" aria-pressed="false">Book Chapters · 4</button>
+            </div>
+ 
+            <ul class="record-list" id="pub-list" role="list">
+                <li class="record-entry" data-type="journal">
+                    <span class="type-badge tag-type-journal">Journal</span>
+                    <h3 class="record-title">Frequency and damping analysis of hexagonal microcantilever beams</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, L. Devsoth, A. Akarapu, P. Pal, A.K. Pandey</p>
+                    <p class="record-meta">Sensors and Actuators A: Physica, vol. 375, 115542 · 2024</p>
+                    <a href="https://doi.org/10.1016/j.sna.2024.115542" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="journal">
+                    <span class="type-badge tag-type-journal">Journal</span>
+                    <h3 class="record-title">Design and fabrication of leaf-based microcantilever beams</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, A. Akarapu, P. Pal, A.K. Pandey</p>
+                    <p class="record-meta">Microsystem Technologies, vol. 1–21 · 2024</p>
+                    <a href="https://doi.org/10.1007/s00542-024-05838-1" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="journal">
+                    <span class="type-badge tag-type-journal">Journal</span>
+                    <h3 class="record-title">Force-amplifying compliant mechanism for closed-loop MEMS accelerometer</h3>
+                    <p class="record-authors">N. Jani*, S.K. Jujjuvarapu*, P. Menon, A.K. Pandey</p>
+                    <p class="record-meta">IEEE Sensors Letters, vol. 8, no. 12, pp. 1–4 · 2024</p>
+                    <a href="https://doi.org/10.1109/LSENS.2024.3484527" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+ 
+                <li class="record-entry" data-type="conference">
+                    <span class="type-badge tag-type-conference">Conference</span>
+                    <h3 class="record-title">Frequency analysis of microbeam with axial pretension using MSGT</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, I.R. Erravally, A.K. Pandey</p>
+                    <p class="record-meta">Microactuators, Microsensors and Micromechanisms (MAMM 2022), Mechanisms and Machine Science, vol. 126, IIT Hyderabad · Dec 2022</p>
+                    <a href="https://doi.org/10.1007/978-3-031-20353-4_15" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="conference">
+                    <span class="type-badge tag-type-conference">Conference</span>
+                    <h3 class="record-title">Design and modeling of curved beam based differential capacitive MEMS accelerometer</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, A.K. Pandey</p>
+                    <p class="record-meta">IEEE Applied Sensing Conference (APSCON), Goa, India · Jan 2023</p>
+                    <a href="https://doi.org/10.1109/APSCON60364.2024.10465764" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="conference">
+                    <span class="type-badge tag-type-conference">Conference</span>
+                    <h3 class="record-title">Design and modeling of differential capacitive hexagonal beam based MEMS accelerometer</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, A.K. Pandey</p>
+                    <p class="record-meta">Symposium on Design, Test, Integration and Packaging of MEMS/MOEMS (DTIP), Dresden, Germany · June 2024</p>
+                    <a href="https://doi.org/10.1109/DTIP62575.2024.10613242" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="conference">
+                    <span class="type-badge tag-type-conference">Conference</span>
+                    <h3 class="record-title">Design of open and closed-loop architecture in hexagonal beam-based MEMS accelerometer</h3>
+                    <p class="record-authors">S.K. Jujjuvarapu, N. Jani, A.K. Pandey</p>
+                    <p class="record-meta">IEEE Applied Sensing Conference (APSCON) 2025, IIT Hyderabad, India · 2025</p>
+                </li>
+ 
+                <li class="record-entry" data-type="book">
+                    <span class="type-badge tag-type-book">Book Chapter</span>
+                    <h3 class="record-title">Thermoelastic Damping in a Perforated MEMS Resonators</h3>
+                    <p class="record-authors">N. Dwivedi, S.K. Jujjuvarapu, A.K. Pandey</p>
+                    <p class="record-meta">Springer, Singapore · Dec 2023</p>
+                    <a href="https://doi.org/10.1007/978-981-97-5423-6_24" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="book">
+                    <span class="type-badge tag-type-book">Book Chapter</span>
+                    <h3 class="record-title">Closed-Loop Differential Capacitive MEMS Accelerometer with a Compound Lever-Based Compliant Mechanism</h3>
+                    <p class="record-authors">N. Jani*, S.K. Jujjuvarapu*, S. Menon, A.K. Pandey</p>
+                    <p class="record-meta">Springer, Singapore · July 2024, pp. 313–324</p>
+                    <a href="https://doi.org/10.1007/978-981-96-3445-3_32" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="book">
+                    <span class="type-badge tag-type-book">Book Chapter</span>
+                    <h3 class="record-title">Quadrature Error Control Closed Loop for a Dual Proof Mass MEMS Gyroscope</h3>
+                    <p class="record-authors">A.K. Mishra, V.D. Dwivedi, S.K. Jujjuvarapu, <em>et al.</em></p>
+                    <p class="record-meta">Springer, Cham · Ho Chi Minh City, Vietnam, Nov 2024, pp. 319–333</p>
+                    <a href="https://doi.org/10.1007/978-3-031-83357-1_32" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+                <li class="record-entry" data-type="book">
+                    <span class="type-badge tag-type-book">Book Chapter</span>
+                    <h3 class="record-title">Design and Analysis of Curved Beam-Based Mechanical Amplifier in MEMS Accelerometer</h3>
+                    <p class="record-authors">A. Pubbi*, S.K. Jujjuvarapu*, A.K. Mishra, A.K. Pandey</p>
+                    <p class="record-meta">Springer, Singapore · July 2024, pp. 297–311</p>
+                    <a href="https://doi.org/10.1007/978-981-96-3445-3_31" target="_blank" rel="noopener noreferrer" class="record-doi">DOI <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <p class="pub-note">* Denotes equal contribution.</p>
+        </div>
+    </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <div class="contact-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:saikishore530@gmail.com" class="contact-link-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-bottom-row">
+                <p>@ Deployed with <span class="heart-emoji">❤️</span> by A</p>
+                <a href="https://github.com/saikishorej18/saikishore-portfolio" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> Check this on Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Social Links (globally visible) -->
+    <div class="fixed-bottom-social-links">
+        <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:saikishore530@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
